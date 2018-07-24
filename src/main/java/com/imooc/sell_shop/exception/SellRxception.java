@@ -15,5 +15,9 @@ public class SellRxception extends RuntimeException {
 
         this.code = resultEnum.getCode();
     }
+    public SellRxception(Integer code,String message){
+        super(message);
+        this.code = code;
+    }
 
 }
